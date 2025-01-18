@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-1!h+#w12x#)%h3onwv2#c7e9a&c^dcwi*%+%fvty0rc3i!0o(d'
+SECRET_KEY = 'django-insecure-80f0to0#*tkn*(=#(90#%%+31mv0ua+^_vosa*m^zbad%b2@if'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,6 +37,20 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # local
+    'django_admin_listfilter_dropdown',
+    
+    #====== apps ================
+    'apps.main.apps.MainConfig',
+    'apps.accounts.apps.AccountsConfig',
+    'apps.products.apps.ProductsConfig',
+    
+    #====== ckeditor ================
+    'ckeditor',
+    'ckeditor_uploader',
+    
+    #===========site design =====================
+    'django_render_partial', # run view in html templates
 ]
 
 MIDDLEWARE = [
@@ -54,7 +68,7 @@ ROOT_URLCONF = 'shop_alma.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -62,6 +76,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'apps.main.views.media_admin',
             ],
         },
     },
@@ -75,8 +90,12 @@ WSGI_APPLICATION = 'shop_alma.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'mysql.connector.django',
+        'NAME': 'dbshop_alma',
+        'USER': 'root',
+        'PASSWORD': '123456',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
@@ -109,15 +128,62 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static/'),)
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL="accounts.CustomUser"
+
+#=================CKEDITOR==========================================================
+CKEDITOR_UPLOAD_PATH="uploads/"
+CKEDITOR_UPLOAD_PATH="images/ckeditor/upload_files/"
+CKEDITOR_ALLOW_NONIMAGE_FILES=False
+CKEDITOR_STORAGE_BACKEND='django.core.files.storage.FileSystemStorage'
+CKEDITOR_CONFIGS={
+    'default': {
+        'toolbar': 'Custom',
+        'toolbar_Custom': [
+            ['Bold', 'Link', 'Ulink','Image'],
+            
+        ],
+    },
+    
+    'special':
+        {
+            'toolbar':'Special','height':500,
+            'toolbar':'full',
+            'toolbar_Special':
+                [
+                    ['Bold','Link','Unlink','Image'],
+                    ['CodeSnippet'],
+                ],'extraPlugins':','.join(['codesnippet','clipboard',])
+        },
+        
+        
+    'special_an':
+        {
+            'toolbar':'Special','height':500,
+            'toolbar_Special':
+                [
+                    ['Bold'],
+                    ['CodeSnippet'],
+                ],'extraPlugins':','.join(['codesnippet',])
+        }
+}
+
+# ============================================================================================================
