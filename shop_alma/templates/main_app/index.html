@@ -6,703 +6,333 @@
 
 {% block content %}
 
-    	<!-- site__body -->
-		<div class="site__body">
-			<!-- .block-slideshow -->
-			<div class="block-slideshow block-slideshow--layout--full block">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<div class="block-slideshow__body">
-								<div class="owl-carousel">
-									<a class="block-slideshow__slide" href="">
-										<div class="block-slideshow__slide-image block-slideshow__slide-image--desktop"
-											style="background-image: url('{{media_url}}/images/slides/slide-1-full.jpg')"></div>
-										<div class="block-slideshow__slide-image block-slideshow__slide-image--mobile"
-											style="background-image: url('{{media_url}}/images/slides/slide-1-mobile.jpg')"></div>
-										<div class="block-slideshow__slide-content">
-											<div class="block-slideshow__slide-title">عنوان
-												شماره 1
-											</div>
-											<div class="block-slideshow__slide-text">لورم ایپسوم متن ساختگی با تولید
-												سادگی نامفهوم از صنعت چاپ
-												<br>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-											</div>
-										</div>
-									</a>
-									<a class="block-slideshow__slide" href="">
-										<div class="block-slideshow__slide-image block-slideshow__slide-image--desktop"
-											style="background-image: url('{{media_url}}/images/slides/slide-2-full.jpg')"></div>
-										<div class="block-slideshow__slide-image block-slideshow__slide-image--mobile"
-											style="background-image: url('{{media_url}}/images/slides/slide-2-mobile.jpg')"></div>
-										<div class="block-slideshow__slide-content">
-											<div class="block-slideshow__slide-title">عنوان
-												شماره2
-											</div>
-											<div class="block-slideshow__slide-text">لورم ایپسوم متن ساختگی با تولید
-												سادگی نامفهوم از صنعت چاپ
-												<br>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-											</div>
-										</div>
-									</a>
-									<a class="block-slideshow__slide" href="">
-										<div class="block-slideshow__slide-image block-slideshow__slide-image--desktop"
-											style="background-image: url('{{media_url}}/images/slides/slide-3-full.jpg')"></div>
-										<div class="block-slideshow__slide-image block-slideshow__slide-image--mobile"
-											style="background-image: url('{{media_url}}/images/slides/slide-3-mobile.jpg')"></div>
-										<div class="block-slideshow__slide-content">
-											<div class="block-slideshow__slide-title">عنوان
-												شماره 3
-											</div>
-											<div class="block-slideshow__slide-text">لورم ایپسوم متن ساختگی با تولید
-												سادگی نامفهوم از صنعت چاپ
-												<br>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- .block-slideshow / end -->
-			<!-- .block-features -->
-			<div class="block block-features block-features--layout--boxed">
-				<div class="container">
-					<div class="block-features__list">
-						<div class="block-features__item">
-							<div class="block-features__icon">
-								<i class="fa fa-list"></i>
-							</div>
-							<div class="block-features__content">
-								<div class="block-features__title">ارسال رایگان</div>
-								<div class="block-features__subtitle">لورم ایپسوم متن ساختگی</div>
-							</div>
-						</div>
-						<div class="block-features__divider"></div>
-						<div class="block-features__item">
-							<div class="block-features__icon">
-								<i class="fa fa-list"></i>
-							</div>
-							<div class="block-features__content">
-								<div class="block-features__title">پشتیبانی 24 ساعته</div>
-								<div class="block-features__subtitle">هر زمان تماس بگیرید</div>
-							</div>
-						</div>
-						<div class="block-features__divider"></div>
-						<div class="block-features__item">
-							<div class="block-features__icon">
-								<i class="fa fa-list"></i>
-							</div>
-							<div class="block-features__content">
-								<div class="block-features__title">100% امن</div>
-								<div class="block-features__subtitle">پرداخت های امن</div>
-							</div>
-						</div>
-						<div class="block-features__divider"></div>
-						<div class="block-features__item">
-							<div class="block-features__icon">
-								<i class="fa fa-list"></i>
-							</div>
-							<div class="block-features__content">
-								<div class="block-features__title">پیشنهادات جدید</div>
-								<div class="block-features__subtitle">تخفیف تا 90%</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- .block-features / end -->
-			<!-- .block-products-carousel -->
-			
-			{% render_partial 'products:cheapest_products' %}
+  <div class="main-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="caption header-text">
+            <h6>Welcome to lugx</h6>
+            <h2>BEST GAMING SITE EVER!</h2>
+            <p>LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. You can download and use this layout for commercial purposes. Please tell your friends about TemplateMo.</p>
+            <div class="search-input">
+              <form id="search" action="#">
+                <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                <button role="button">Search Now</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-2">
+          <div class="right-image">
+            <img src="{{media_url}}/images/banner-image.jpg" alt="">
+            <span class="price">$22</span>
+            <span class="offer">-40%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-			<!-- .block-products-carousel / end -->
-			<!-- .block-banner -->
-			<div class="block block-banner">
-				<div class="container">
-					<a href="" class="block-banner__body">
-						<div class="block-banner__image block-banner__image--desktop"
-							style="background-image: url('https://picsum.photos/1110/170')"></div>
-						<div class="block-banner__image block-banner__image--mobile"
-							style="background-image: url('https://picsum.photos/510/390')"></div>
-						<div class="block-banner__title">
-							کالای تبلیغاتی
-							<br class="block-banner__mobile-br">
-						</div>
-						<div class="block-banner__text">بهترین کالا برای خرید شما</div>
-						<div class="block-banner__button"><span class="btn btn-sm btn-primary">هم اکنون بخرید</span>
-						</div>
-					</a>
-				</div>
-			</div>
-			<!-- .block-banner / end -->
-			<!-- .block-products -->
-			<div class="block block-products block-products--layout--large-last">
-				<div class="container">
-					<div class="block-header">
-						<h3 class="block-header__title">پرفروش ترین ها</h3>
-						<div class="block-header__divider"></div>
-					</div>
-					<div class="block-products__body">
-						<div class="block-products__list">
-							<div class="block-products__list-item">
-								<div class="product-card">
-									<div class="product-card__badges-list">
-										<div class="product-card__badge product-card__badge--sale">جدید</div>
-									</div>
-									<div class="product-card__image">
-										<a href="product.html">
-											<img src="{{media_url}}/images/products/p2.jpg" alt="">
-										</a>
-									</div>
-									<div class="product-card__info">
-										<div class="product-card__name">
-											<a href="product.html">
-												کالای شماره 2
-											</a>
-										</div>
-									</div>
-									<div class="product-card__actions">
-										<div class="product-card__availability">موجودی: <span class="text-success">موجود
-												در انبار</span></div>
-										<div class="product-card__prices"><span class="product-card__new-price">184,000
-												تومان</span> <span class="product-card__old-price">200,000
-												تومان</span></div>
-										<div class="product-card__buttons">
-											<button class="btn btn-primary product-card__addtocart" type="button">
-												افزودن به سبد
-											</button>
-											<button
-												class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-												type="button">
-												<i class="fa fa-heart"></i>
-												<span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-											</button>
-											<button
-												class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-												type="button">
-												<i class="fa fa-shopping-cart"></i>
-												<span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="block-products__list-item">
-								<div class="product-card">
-									<div class="product-card__badges-list">
-										<div class="product-card__badge product-card__badge--sale">جدید</div>
-									</div>
-									<div class="product-card__image">
-										<a href="product.html">
-											<img src="{{media_url}}/images/products/p1.jpg" alt="">
-										</a>
-									</div>
-									<div class="product-card__info">
-										<div class="product-card__name">
-											<a href="product.html">
-												کالای شماره 2
-											</a>
-										</div>
+  <div class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <a href="#">
+            <div class="item">
+              <div class="image">
+                <img src="{{media_url}}/images/featured-01.png" alt="" style="max-width: 44px;">
+              </div>
+              <h4>Free Storage</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <a href="#">
+            <div class="item">
+              <div class="image">
+                <img src="{{media_url}}/images/featured-02.png" alt="" style="max-width: 44px;">
+              </div>
+              <h4>User More</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <a href="#">
+            <div class="item">
+              <div class="image">
+                <img src="{{media_url}}/images/featured-03.png" alt="" style="max-width: 44px;">
+              </div>
+              <h4>Reply Ready</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <a href="#">
+            <div class="item">
+              <div class="image">
+                <img src="{{media_url}}/images/featured-04.png" alt="" style="max-width: 44px;">
+              </div>
+              <h4>Easy Layout</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-									</div>
-									<div class="product-card__actions">
-										<div class="product-card__availability">موجودی: <span class="text-success">موجود
-												در انبار</span></div>
-										<div class="product-card__prices"><span class="product-card__new-price">184,000
-												تومان</span> <span class="product-card__old-price">200,000
-												تومان</span></div>
-										<div class="product-card__buttons">
-											<button class="btn btn-primary product-card__addtocart" type="button">
-												افزودن به سبد
-											</button>
-											<button
-												class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-												type="button">
-												<i class="fa fa-heart"></i>
-												<span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-											</button>
-											<button
-												class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-												type="button">
-												<i class="fa fa-shopping-cart"></i>
-												<span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="block-products__list-item">
-								<div class="product-card">
-									<div class="product-card__badges-list">
-										<div class="product-card__badge product-card__badge--sale">جدید</div>
-									</div>
-									<div class="product-card__image">
-										<a href="product.html">
-											<img src="{{media_url}}/images/products/p1.jpg" alt="">
-										</a>
-									</div>
-									<div class="product-card__info">
-										<div class="product-card__name">
-											<a href="product.html">
-												کالای شماره 2
-											</a>
-										</div>
+  <div class="section trending">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h6>Trending</h6>
+            <h2>Trending Games</h2>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="main-button">
+            <a href="shop.html">View All</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="{{media_url}}/images/trending-01.jpg" alt=""></a>
+              <span class="price"><em>$28</em>$20</span>
+            </div>
+            <div class="down-content">
+              <span class="category">Action</span>
+              <h4>Assasin Creed</h4>
+              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="{{media_url}}/images/trending-02.jpg" alt=""></a>
+              <span class="price">$44</span>
+            </div>
+            <div class="down-content">
+              <span class="category">Action</span>
+              <h4>Assasin Creed</h4>
+              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="{{media_url}}/images/trending-03.jpg" alt=""></a>
+              <span class="price"><em>$64</em>$44</span>
+            </div>
+            <div class="down-content">
+              <span class="category">Action</span>
+              <h4>Assasin Creed</h4>
+              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="{{media_url}}/images/trending-04.jpg" alt=""></a>
+              <span class="price">$32</span>
+            </div>
+            <div class="down-content">
+              <span class="category">Action</span>
+              <h4>Assasin Creed</h4>
+              <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-									</div>
-									<div class="product-card__actions">
-										<div class="product-card__availability">موجودی: <span class="text-success">موجود
-												در انبار</span></div>
-										<div class="product-card__prices"><span class="product-card__new-price">184,000
-												تومان</span> <span class="product-card__old-price">200,000
-												تومان</span></div>
-										<div class="product-card__buttons">
-											<button class="btn btn-primary product-card__addtocart" type="button">
-												افزودن به سبد
-											</button>
-											<button
-												class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-												type="button">
-												<i class="fa fa-heart"></i>
-												<span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-											</button>
-											<button
-												class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-												type="button">
-												<i class="fa fa-shopping-cart"></i>
-												<span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="block-products__list-item">
-								<div class="product-card">
-									<div class="product-card__badges-list">
-										<div class="product-card__badge product-card__badge--sale">جدید</div>
-									</div>
-									<div class="product-card__image">
-										<a href="product.html">
-											<img src="{{media_url}}/images/products/p1.jpg" alt="">
-										</a>
-									</div>
-									<div class="product-card__info">
-										<div class="product-card__name">
-											<a href="product.html">
-												کالای شماره 2
-											</a>
-										</div>
+  <div class="section most-played">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h6>TOP GAMES</h6>
+            <h2>Most Played</h2>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="main-button">
+            <a href="shop.html">View All</a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="{{media_url}}/images/top-game-01.jpg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Adventure</span>
+                <h4>Assasin Creed</h4>
+                <a href="product-details.html">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="{{media_url}}/images/top-game-02.jpg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Adventure</span>
+                <h4>Assasin Creed</h4>
+                <a href="product-details.html">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="{{media_url}}/images/top-game-03.jpg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Adventure</span>
+                <h4>Assasin Creed</h4>
+                <a href="product-details.html">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="{{media_url}}/images/top-game-04.jpg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Adventure</span>
+                <h4>Assasin Creed</h4>
+                <a href="product-details.html">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="{{media_url}}/images/top-game-05.jpg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Adventure</span>
+                <h4>Assasin Creed</h4>
+                <a href="product-details.html">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <div class="item">
+            <div class="thumb">
+              <a href="product-details.html"><img src="{{media_url}}/images/top-game-06.jpg" alt=""></a>
+            </div>
+            <div class="down-content">
+                <span class="category">Adventure</span>
+                <h4>Assasin Creed</h4>
+                <a href="product-details.html">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-									</div>
-									<div class="product-card__actions">
-										<div class="product-card__availability">موجودی: <span class="text-success">موجود
-												در انبار</span></div>
-										<div class="product-card__prices"><span class="product-card__new-price">184,000
-												تومان</span> <span class="product-card__old-price">200,000
-												تومان</span></div>
-										<div class="product-card__buttons">
-											<button class="btn btn-primary product-card__addtocart" type="button">
-												افزودن به سبد
-											</button>
-											<button
-												class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-												type="button">
-												<i class="fa fa-heart"></i>
-												<span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-											</button>
-											<button
-												class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-												type="button">
-												<i class="fa fa-shopping-cart"></i>
-												<span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="block-products__list-item">
-								<div class="product-card">
-									<div class="product-card__badges-list">
-										<div class="product-card__badge product-card__badge--sale">جدید</div>
-									</div>
-									<div class="product-card__image">
-										<a href="product.html">
-											<img src="{{media_url}}/images/products/p1.jpg" alt="">
-										</a>
-									</div>
-									<div class="product-card__info">
-										<div class="product-card__name">
-											<a href="product.html">
-												کالای شماره 2
-											</a>
-										</div>
+  <div class="section categories">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+            <h6>Categories</h6>
+            <h2>Top Categories</h2>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Action</h4>
+            <div class="thumb">
+              <a href="product-details.html"><img src="{{media_url}}/images/categories-01.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Action</h4>
+            <div class="thumb">
+              <a href="product-details.html"><img src="{{media_url}}/images/categories-05.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Action</h4>
+            <div class="thumb">
+              <a href="product-details.html"><img src="{{media_url}}/images/categories-03.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Action</h4>
+            <div class="thumb">
+              <a href="product-details.html"><img src="{{media_url}}/images/categories-04.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg col-sm-6 col-xs-12">
+          <div class="item">
+            <h4>Action</h4>
+            <div class="thumb">
+              <a href="product-details.html"><img src="{{media_url}}/images/categories-05.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-									</div>
-									<div class="product-card__actions">
-										<div class="product-card__availability">موجودی: <span class="text-success">موجود
-												در انبار</span></div>
-										<div class="product-card__prices"><span class="product-card__new-price">184,000
-												تومان</span> <span class="product-card__old-price">200,000
-												تومان</span></div>
-										<div class="product-card__buttons">
-											<button class="btn btn-primary product-card__addtocart" type="button">
-												افزودن به سبد
-											</button>
-											<button
-												class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-												type="button">
-												<i class="fa fa-heart"></i>
-												<span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-											</button>
-											<button
-												class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-												type="button">
-												<i class="fa fa-shopping-cart"></i>
-												<span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="block-products__list-item">
-								<div class="product-card">
-									<div class="product-card__badges-list">
-										<div class="product-card__badge product-card__badge--sale">جدید</div>
-									</div>
-									<div class="product-card__image">
-										<a href="product.html">
-											<img src="{{media_url}}/images/products/p1.jpg" alt="">
-										</a>
-									</div>
-									<div class="product-card__info">
-										<div class="product-card__name">
-											<a href="product.html">
-												کالای شماره 2
-											</a>
-										</div>
-
-									</div>
-									<div class="product-card__actions">
-										<div class="product-card__availability">موجودی: <span class="text-success">موجود
-												در انبار</span></div>
-										<div class="product-card__prices"><span class="product-card__new-price">184,000
-												تومان</span> <span class="product-card__old-price">200,000
-												تومان</span></div>
-										<div class="product-card__buttons">
-											<button class="btn btn-primary product-card__addtocart" type="button">
-												افزودن به سبد
-											</button>
-											<button
-												class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-												type="button">
-												<i class="fa fa-heart"></i>
-												<span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-											</button>
-											<button
-												class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-												type="button">
-												<i class="fa fa-shopping-cart"></i>
-												<span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="block-products__featured">
-							<div class="block-products__featured-item">
-								<div class="product-card">
-
-									<div class="product-card__badges-list">
-										<div class="product-card__badge product-card__badge--new">جدید</div>
-									</div>
-									<div class="product-card__image">
-										<a href="product.html">
-											<img src="{{media_url}}/images/products/p1.jpg" alt="">
-										</a>
-									</div>
-									<div class="product-card__info">
-										<div class="product-card__name">
-											<a href="product.html">
-												کالای شماره 2
-											</a>
-										</div>
-
-									</div>
-									<div class="product-card__actions">
-										<div class="product-card__availability">موجودی: <span class="text-success">موجود
-												در انبار</span></div>
-										<div class="product-card__prices">200,000 تومان</div>
-										<div class="product-card__buttons">
-											<button class="btn btn-primary product-card__addtocart" type="button">
-												افزودن به سبد
-											</button>
-											<button
-												class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-												type="button">
-												<i class="fa fa-heart"></i>
-												<span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-											</button>
-											<button
-												class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
-												type="button">
-												<i class="fa fa-shopping-cart"></i>
-												<span class="fake-svg-icon fake-svg-icon--wishlist-16"></span>
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- .block-products / end -->
-			<!-- .block-categories -->
-
-			<!-- .block-categories / end -->
-			<!-- .block-products-carousel -->
-		{% render_partial 'products:last_products' %}
-			<!-- .block-products-carousel / end -->
-			<!-- .block-posts -->
-			<div class="block block-posts block-posts--layout--grid-nl" data-layout="grid-nl">
-				<div class="container">
-					<div class="block-header">
-						<h3 class="block-header__title">آخرین مقالات</h3>
-						<div class="block-header__divider"></div>
-						<div class="block-header__arrows-list">
-
-							<button class="block-header__arrow block-header__arrow--left" type="button">
-								<i class="fas fa-angle-right"></i>
-							</button>
-							<button class="block-header__arrow block-header__arrow--right" type="button">
-								<i class="fas fa-angle-left"></i>
-							</button>
-						</div>
-					</div>
-					<div class="block-posts__slider">
-						<div class="owl-carousel">
-							<div class="post-card">
-								<div class="post-card__image">
-									<a href="">
-										<img src="{{media_url}}/images/products/p3.jpg" alt="">
-									</a>
-								</div>
-								<div class="post-card__info">
-									<div class="post-card__category"><a href="">پیشنهادهای ویژه</a></div>
-									<div class="post-card__name"><a href="">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</a></div>
-									<div class="post-card__date">19 فروردین 1401</div>
-									<div class="post-card__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-										صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
-										در ستون و سطرآنچنان</div>
-									<div class="post-card__read-more"><a href="" class="btn btn-secondary btn-sm">بیشتر
-											بخوانید</a></div>
-								</div>
-							</div>
-							<div class="post-card">
-								<div class="post-card__image">
-									<a href="">
-										<img src="{{media_url}}/images/products/p3.jpg" alt="">
-									</a>
-								</div>
-								<div class="post-card__info">
-									<div class="post-card__category"><a href="">آخرین اخبار</a></div>
-									<div class="post-card__name"><a href="">لورم ایپسوم متن ساختگی با تولید سادگی
-											نامفهوم از صنعت</a></div>
-									<div class="post-card__date">5 فروردین 1401</div>
-									<div class="post-card__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-										صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
-										در ستون و سطرآنچنان</div>
-									<div class="post-card__read-more"><a href="" class="btn btn-secondary btn-sm">بیشتر
-											بخوانید</a></div>
-								</div>
-							</div>
-							<div class="post-card">
-								<div class="post-card__image">
-									<a href="">
-										<img src="{{media_url}}/images/products/p3.jpg" alt="">
-									</a>
-								</div>
-								<div class="post-card__info">
-									<div class="post-card__category"><a href="">محصولات جدید</a></div>
-									<div class="post-card__name"><a href="">لورم ایپسوم متن ساختگی با تولید سادگی
-											نامفهوم از صنعت چاپ و با</a></div>
-									<div class="post-card__date">12 اسفند 1397</div>
-									<div class="post-card__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-										صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
-										در ستون و سطرآنچنان</div>
-									<div class="post-card__read-more"><a href="" class="btn btn-secondary btn-sm">بیشتر
-											بخوانید</a></div>
-								</div>
-							</div>
-							<div class="post-card">
-								<div class="post-card__image">
-									<a href="">
-										<img src="{{media_url}}/images/products/p3.jpg" alt="">
-									</a>
-								</div>
-								<div class="post-card__info">
-									<div class="post-card__category"><a href="">پیشنهادهای ویژه</a></div>
-									<div class="post-card__name"><a href="">لورم ایپسوم متن ساختگی با تولید سادگی
-											نامفهوم از صنعت چاپ و با استفاده از طراحان</a></div>
-									<div class="post-card__date">30 بهمن 1397</div>
-									<div class="post-card__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-										صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
-										در ستون و سطرآنچنان</div>
-									<div class="post-card__read-more"><a href="" class="btn btn-secondary btn-sm">بیشتر
-											بخوانید</a></div>
-								</div>
-							</div>
-							<div class="post-card">
-								<div class="post-card__image">
-									<a href="">
-										<img src="{{media_url}}/images/products/p3.jpg" alt="">
-									</a>
-								</div>
-								<div class="post-card__info">
-									<div class="post-card__category"><a href="">محصولات جدید</a></div>
-									<div class="post-card__name"><a href="">لورم ایپسوم متن ساختگی با تولید سادگی
-											نامفهوم از صنعت چاپ و</a></div>
-									<div class="post-card__date">12 دی 1397</div>
-									<div class="post-card__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-										صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
-										در ستون و سطرآنچنان</div>
-									<div class="post-card__read-more"><a href="" class="btn btn-secondary btn-sm">بیشتر
-											بخوانید</a></div>
-								</div>
-							</div>
-							<div class="post-card">
-								<div class="post-card__image">
-									<a href="">
-										<img src="{{media_url}}/images/products/p3.jpg" alt="">
-									</a>
-								</div>
-								<div class="post-card__info">
-									<div class="post-card__category"><a href="">پیشنهادهای ویژه</a></div>
-									<div class="post-card__name"><a href="">لورم ایپسوم متن ساختگی با تولید سادگی
-											نامفهوم از صنعت</a></div>
-									<div class="post-card__date">21 آذر 1397</div>
-									<div class="post-card__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-										صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
-										در ستون و سطرآنچنان</div>
-									<div class="post-card__read-more"><a href="" class="btn btn-secondary btn-sm">بیشتر
-											بخوانید</a></div>
-								</div>
-							</div>
-							<div class="post-card">
-								<div class="post-card__image">
-									<a href="">
-										<img src="{{media_url}}/images/products/p3.jpg" alt="">
-									</a>
-								</div>
-								<div class="post-card__info">
-									<div class="post-card__category"><a href="">پیشنهادهای ویژه</a></div>
-									<div class="post-card__name"><a href="">لورم ایپسوم متن ساختگی با تولید سادگی
-											نامفهوم از صنعت چاپ و با استفاده از</a></div>
-									<div class="post-card__date">3 آذر 1397</div>
-									<div class="post-card__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-										صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
-										در ستون و سطرآنچنان</div>
-									<div class="post-card__read-more"><a href="" class="btn btn-secondary btn-sm">بیشتر
-											بخوانید</a></div>
-								</div>
-							</div>
-							<div class="post-card">
-								<div class="post-card__image">
-									<a href="">
-										<img src="{{media_url}}/images/products/p3.jpg" alt="">
-									</a>
-								</div>
-								<div class="post-card__info">
-									<div class="post-card__category"><a href="">آخرین اخبار</a></div>
-									<div class="post-card__name"><a href="">لورم ایپسوم متن ساختگی با تولید سادگی
-											نامفهوم از صنعت چاپ و با استفاده</a></div>
-									<div class="post-card__date">29 آبان 1397</div>
-									<div class="post-card__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-										صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
-										در ستون و سطرآنچنان</div>
-									<div class="post-card__read-more"><a href="" class="btn btn-secondary btn-sm">بیشتر
-											بخوانید</a></div>
-								</div>
-							</div>
-							<div class="post-card">
-								<div class="post-card__image">
-									<a href="">
-										<img src="{{media_url}}/images/products/p3.jpg" alt="">
-									</a>
-								</div>
-								<div class="post-card__info">
-									<div class="post-card__category"><a href="">محصولات جدید</a></div>
-									<div class="post-card__name"><a href="">لورم ایپسوم متن ساختگی با تولید سادگی
-											نامفهوم از صنعت چاپ و با استفاده از</a></div>
-									<div class="post-card__date">10 مهر 1397</div>
-									<div class="post-card__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-										صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
-										در ستون و سطرآنچنان</div>
-									<div class="post-card__read-more"><a href="" class="btn btn-secondary btn-sm">بیشتر
-											بخوانید</a></div>
-								</div>
-							</div>
-							<div class="post-card">
-								<div class="post-card__image">
-									<a href="">
-										<img src="{{media_url}}/images/products/p3.jpg" alt="">
-									</a>
-								</div>
-								<div class="post-card__info">
-									<div class="post-card__category"><a href="">پیشنهادهای ویژه</a></div>
-									<div class="post-card__name"><a href="">لورم ایپسوم متن ساختگی با تولید سادگی
-											نامفهوم از صنعت چاپ</a></div>
-									<div class="post-card__date">1 شهریور 1397</div>
-									<div class="post-card__content">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-										صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
-										در ستون و سطرآنچنان</div>
-									<div class="post-card__read-more"><a href="" class="btn btn-secondary btn-sm">بیشتر
-											بخوانید</a></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- .block-posts / end -->
-			<!-- .block-brands -->
-
-			<div class="block block-brands">
-				<div class="container">
-					<div class="block-brands__slider">
-						<div class="owl-carousel">
-							<div class="block-brands__item">
-								<a href=""><img src="https://via.placeholder.com/380x80/79f.png/fff" alt=""></a>
-							</div>
-							<div class="block-brands__item">
-								<a href=""><img src="https://via.placeholder.com/380x80/08f.png/fff" alt=""></a>
-							</div>
-							<div class="block-brands__item">
-								<a href=""><img src="https://via.placeholder.com/380x80/a7f.png/fff" alt=""></a>
-							</div>
-							<div class="block-brands__item">
-								<a href=""><img src="https://via.placeholder.com/380x80/06f.png/fff" alt=""></a>
-							</div>
-							<div class="block-brands__item">
-								<a href=""><img src="https://via.placeholder.com/380x80/e5f.png/fff" alt=""></a>
-							</div>
-							<div class="block-brands__item">
-								<a href=""><img src="https://via.placeholder.com/380x80/04f.png/fff" alt=""></a>
-							</div>
-							<div class="block-brands__item">
-								<a href=""><img src="https://via.placeholder.com/380x80/f3f.png/fff" alt=""></a>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- .block-brands / end -->
-		</div>
-		<!-- site__body / end -->
+  <div class="section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="shop">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-heading">
+                  <h6>Our Shop</h6>
+                  <h2>Go Pre-Order Buy & Get Best <em>Prices</em> For You!</h2>
+                </div>
+                <p>Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt.</p>
+                <div class="main-button">
+                  <a href="shop.html">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-2 align-self-end">
+          <div class="subscribe">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-heading">
+                  <h6>NEWSLETTER</h6>
+                  <h2>Get Up To $100 Off Just Buy <em>Subscribe</em> Newsletter!</h2>
+                </div>
+                <div class="search-input">
+                  <form id="subscribe" action="#">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email...">
+                    <button type="submit">Subscribe Now</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 {% endblock content %}
 
