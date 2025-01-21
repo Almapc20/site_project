@@ -355,7 +355,7 @@ Header Style
 .background-header {
   background-color: #0071f8 !important;
   border-radius: 0px 0px 25px 25px;
-  height: 80px !important;
+  height: 120px !important;
   position: fixed !important;
   top: 0 !important;
   left: 0;
@@ -416,6 +416,7 @@ Header Style
   flex-basis: 100%;
   margin-top: 10px;
   justify-content: right;
+  align-items: center;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -431,7 +432,7 @@ Header Style
 .header-area .main-nav .nav li {
   padding-left: 10px;
   padding-right: 10px;
-  height: 40px;
+  height: 20px;
   line-height: 40px;
 }
 
@@ -441,7 +442,7 @@ Header Style
   padding-right: 20px;
   border-radius: 20px;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 2rem;
   height: 40px;
   line-height: 40px;
   text-transform: capitalize;
@@ -812,7 +813,7 @@ Banner Style
   border: none;
   border-radius: 25px;
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
   transition: all .3s;
 }
@@ -890,6 +891,8 @@ Services Style
   height: 90px;
   display: inline-block;
   text-align: center;
+  align-items: center;
+  align-content: center;
   line-height: 90px;
   background-color: #0071f8;
   border-radius: 50%;
@@ -968,7 +971,9 @@ Trending Style
 
 .trending .item .down-content a {
   position: absolute;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   line-height: 40px;
   width: 40px;
@@ -1185,7 +1190,7 @@ CTA Style
   border: none;
   border-radius: 25px;
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
   transition: all .3s;
 }
